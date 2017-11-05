@@ -72,6 +72,10 @@ section.success {
     margin-bottom: 75px;
 }
 
+section.mus {
+    background: #333138
+}
+
 div.blog-row {
   display:inline;
   margin: 0 10px 15px 300px;
@@ -488,59 +492,37 @@ footer .footer-below {
     outline: 0;
 }
 
-div.article {
-    margin: 0 auto;
+div.playlist {
+    margin-top: 35px;
 }
 
-div.article:hover  {
-    color:#45BEFC;
+.btn6 {
+  display: inline-block;
+  width: 250px;
+  background: #333138;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.625rem;
+  letter-spacing: 0.3em;
+  color: #FFF;
+  /*border-radius: 0;*/
+  padding: 18px 80px 20px;
+  transition: all 0.7s ease-out;
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(51,49,56,1) 0%, rgba(69,190,252,1) 100%);
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  text-decoration: none;
+  margin: 0.625rem;
+  border: none;
+  border: 1px solid rgba(0, 186, 255, 0.8);
+/*  border-radius: 25px;*/
 }
 
-div.article-body {
-    margin: auto;
-    padding: 0px;
-    width: 500px;
-}
-
-div.article-body p {
-    text-align: center;
-}
-
-div.tier {
-    border-bottom: dashed 2px;
-}
-
-div.album {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.album-cover {
-    float:left;
-    width:20%;
-    padding:5px;
-}
-
-.album-cover img {
-    width: 64px;
-    height: 64px;
-}
-
-.album-title {
-    margin-top: 25px;
-    float: left;
-    padding: 0;
-    overflow: auto;
-}
-
-.album-title p{
-    font-size: 15px;
-    overflow: auto;
+.btn6:hover {
+  color: #000;
+  border: 1px solid rgba(223,190,106,0);
+/*  border-radius: 25px;*/
+  color: #000;
+  background-position: 99% 50%;
 }

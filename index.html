@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <title>Michael Langaman</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,6 +33,22 @@
         }
     }
     </style>
+    
+    <script>
+        var makeVisible = function(id)  {
+            var containerList = ["funk", "hiphop", "jazz", "r&b", "reggae", "soul"];
+
+            for( var i = 0; i < containerList.length; ++i){
+                var element = document.getElementById(containerList[i]);
+                if(element.style.display=='block') {
+                    element.style.display = 'none'
+                } 
+            }
+
+            var element = document.getElementById(id);
+            element.style.display = 'block';
+        };
+    </script>
 
 </head>
 
@@ -54,7 +70,7 @@
                         <a class="nav-link" href="#projects">projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
+                        <a class="nav-link" href="#music">music</a>
                     </li>
                 </ul>
             </div>
@@ -89,8 +105,8 @@
                     <div class="col-sm-4 col-xs-4">
                         <ul class="list-unstyled">
                             <li class="page-scroll" align="middle">
-                                <a href="#blog">
-                                    <img class="img-responsive" id="icon" src="img/thoughts.png" alt="" style="width: 180px;" onmouseover="this.src='img/thoughts.png'" onmouseout="this.src='img/thoughts.png'">
+                                <a href="#music">
+                                    <img class="img-responsive" id="icon" src="img/music.png" alt="" style="width: 180px;" onmouseover="this.src='img/music.png'" onmouseout="this.src='img/music.png'">
                                 </a>
                             </li>
                         </ul>
@@ -109,8 +125,8 @@
                     <p>Hi, I'm a sophomore majoring in Computer Science at the University at Buffalo. Besides coding, I enjoy listening to music, playing Super Smash Bros. Melee for the Nintendo Gamecube, and cooking. </p>
                 </div>
                 <div class="col-lg-4">
-                    <p> <a href="resume.pdf">Resume</a> </p>
-                    <p>Languages worked with: <span style="font-weight: bold">Java</span>, C++, Python, HTML, CSS</p>
+                    <p> <a href="MichaelLangamanResume.pdf">Resume</a> </p>
+                    <p>Languages worked with: <span style="font-weight: bold">Java</span>, Python, C++, HTML, CSS, Javascript, SML</p>
                     <p>You can contact me at: langaman.michael@gmail.com </p>
                 </div>
             </div>
@@ -150,31 +166,51 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/swimr.png" alt="">
+                        <img class="img-fluid" src="img/dilla.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Blog Grid Section -->
-    <section class ="thoughts" id="blog">
+    <!-- Music Grid Section -->
+    <section class ="mus" id="music">
         <div class="container">
-            <h2 class="text-center">Blog</h2>
+            <h2 class="text-center">music</h2>
             <hr class="star-primary">
-            <div class="row">
-                    <div class="col-lg-4 offset-lg-2" align="middle">
-                        <br>
-                        <a href="blog/music/index.html"><img class="img-responsive" id="icon" src="img/music.png" alt="" style="width: 100px;" onmouseover="this.src='img/music.png'" onmouseout="this.src='img/music.png'"></a>
-                            <p>If you're interested, you can check out what I am currently listening to and my thoughts on new releases.</p>
-                        </div>
-                    <div class="col-lg-4" align="middle">
-                        <br>
-                        <a href="blog/travel/index.html">
-                        <img class="img-responsive" id="icon" src="img/travel.png" alt="" style="width: 100px;" onmouseover="this.src='img/travel.png'" onmouseout="this.src='img/travel.png'">
-                        </a>
-                            <p>Once I start traveling, I will post my pictures/videos of my travels here as well. </p>
+             <div class="row">
+                <div>
+                <p align="center">Once I start creating my own music, I will showcase it here. For now, you can enjoy the playlists created by my script SampleDigz. Click the buttons below to change the playlist to the corresponding genre!</p>
+                </div>
+                <div class="col-lg-4 offset-lg-2">
+                    <button class = "btn6" onclick="makeVisible('funk')">Funk</button>
+                    <button class = "btn6" onclick="makeVisible('hiphop')">Hip-Hop</button>
+                    <button class = "btn6" onclick="makeVisible('jazz')">Jazz</button>
+                    <button class = "btn6" onclick="makeVisible('r&b')">R&B</button>
+                    <button class = "btn6" onclick="makeVisible('reggae')">Reggae</button>
+                    <button class = "btn6" onclick="makeVisible('soul')">Soul</button>
+                </div>
+                <div class="col-lg-4">
+                    <!-- INSERT YOUTUBE PLAYLISTS  -->
+                    <div class="playlist" id="funk" style="display:block">
+                        <iframe width="560" height="400" src="https://www.youtube.com/embed/videoseries?list=PLlmTs2igliuPeeMt_LdLuuIPUvQF7rmS_" frameborder="0" allowfullscreen></iframe>
                     </div>
+                    <div class="playlist" id="hiphop" style="display:none">
+                        <iframe width="560" height="400" src="https://www.youtube.com/embed/videoseries?list=PLlmTs2igliuN_gOF166ldvbKLYIG9b53x" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="playlist" id="jazz" style="display:none">
+                        <iframe width="560" height="400" src="https://www.youtube.com/embed/videoseries?list=PLlmTs2igliuMmLVc-ZrvG0N95a1jZ5oue" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="playlist" id="r&b" style="display:none">
+                        <iframe width="560" height="400" src="https://www.youtube.com/embed/videoseries?list=PLlmTs2igliuM1T0uU9H1o39O-dKe41VqA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="playlist" id="reggae" style="display:none">
+                        <iframe width="560" height="400" src="https://www.youtube.com/embed/videoseries?list=PLlmTs2igliuNU-ITY1NR1ktHqKeDFjN59" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="playlist" id="soul" style="display:none">
+                        <iframe width="560" height="400" src="https://www.youtube.com/embed/videoseries?list=PLlmTs2igliuNn-ml7f81eZtIicGqibeCZ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -261,9 +297,9 @@
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
                             <div class="modal-body">
-                                <h2>Swimr</h2>
+                                <h2>SampleDigz</h2>
                                 <hr class="star-primary">
-                                <p>An android app that allows the user to randomize their swim workout according to a given yard total. You can check it out <a href="https://github.com/michael-langaman/swimr">here.</a></p>
+                                <p>A script that scrapes r/ListenToThis and curates top posts of the week into several Youtube Playlists.</p>
                                 <button class="btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
